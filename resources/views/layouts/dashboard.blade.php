@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/img/logo-blectric.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="../assets/img/logo-blectric.png">
     <title>
         Ujikom - Junior WEBDEV
     </title>
@@ -32,11 +32,11 @@
         property="og:description"content="Soft UI Dashboard is a beautiful Bootstrap 5 admin dashboard with a large number of components, designed to look beautiful and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you." />
     <meta property="og:site_name" content="Creative Tim" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <link href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/css/nucleo-svg" rel="stylesheet" />
+    <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/css/nucleo-svg.css" rel="stylesheet" />
-    <link id="pagestyle" href="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/css/soft-ui-dashboard.min.css?v=1.0.7" rel="stylesheet" />
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.min.css?v=1.0.7" rel="stylesheet" />
     <style>
         .async-hide {
             opacity: 0 !important
@@ -54,7 +54,7 @@
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
                 aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href="/">
-                <img src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/img/logo-blectric.png" class="navbar-brand-img h-100" alt="main_logo">
+                <img src="../assets/img/logo-blectric.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold">Ujikom</span>
             </a>
         </div>
@@ -74,11 +74,11 @@
             @yield('content')
         </div>
     </main>
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/js/core/popper.min.js"></script>
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/js/core/bootstrap.min.js"></script>
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/js/plugins/smooth-scrollbar.min.js"></script>
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/assets/js/plugins/chartjs.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
     <script>
         var win = navigator.platform.indexOf('Win') > -1;
         if (win && document.querySelector('#sidenav-scrollbar')) {
@@ -91,7 +91,7 @@
 
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <script src="http://ujikom.blectric.web.id/ujikom-junior.web.dev/public/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+    <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"rayId":"898549f9cdbd9c80","version":"2024.4.1","token":"1b7cbb72744b40c580f8633c6b62637e"}'
