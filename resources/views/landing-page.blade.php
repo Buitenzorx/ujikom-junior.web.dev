@@ -19,7 +19,7 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0 is-revealing">Blectric IoT Panel</h1>
+	                        <h1 class="hero-title mt-0 is-revealing">Blectric Panel</h1>
 	                        <p class="hero-paragraph is-revealing">At Blectric IoT Panel, we are revolutionizing the way you interact with technology. Our IoT solutions empower you to seamlessly integrate devices, systems, and services to create an intelligent and responsive environment. Whether you're looking to enhance your home, optimize your business operations, or innovate in industrial applications, our cutting-edge IoT technology has you covered.</p>
 							<div class="hero-form field field-grouped is-revealing">
 	                            <div class="control">

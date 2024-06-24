@@ -85,7 +85,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="button" class="btn btn-primary">Tambah</button>
+                            <button onclick="createUser()" type="button" class="btn btn-primary">Tambah</button>
                         </div>
                     </form>
                 </div>
@@ -96,7 +96,7 @@
     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
     <script>
         function createUser() {
-            const url = "{{ route('api.users.store') }}";
+            const url = "{{ route('api.pegawai.store') }}";
             let data = {
                 name: $('#addName').val(),
                 email: $('#addEmail').val(),
@@ -106,13 +106,13 @@
                 avatar: $('#addAvatar').prop('files')[0]
             }
             $.post(url, data)
-                .data(response) => {
+                .done((response) => {
                     toastr.success(response.message, 'Sukses')
                     setTimeout(() => {
                         location.reload()
                     }, 1000);
-                };
-            .fail((error)) => {
+                })
+            .fail((error) => {
                 let response = error.responseJSON
                 toastr.error(response.message, 'Error')
                 if (response.errors) {
@@ -121,14 +121,14 @@
                         input.addClass('is-invalid');
                         let feedbackElement = '<div class="invalid-feedback">'
                         feedbackElement += '<ul class="list-unstyled">'
-                        response.errors[error].forEach((message)) => {
+                        response.errors[error].forEach((message) => {
                             feedbackElement += '<ul'
                             feedbackElement += '</div'
-                        }
+                        })
                         input.after(feedbackElement)
                     }
                 }
-            }
+            })
         }
         $(document).ready(function() {
             new DataTable('#table-pegawai', {
