@@ -23,7 +23,7 @@
 	                        <p class="hero-paragraph is-revealing">At Blectric IoT Panel, we are revolutionizing the way you interact with technology. Our IoT solutions empower you to seamlessly integrate devices, systems, and services to create an intelligent and responsive environment. Whether you're looking to enhance your home, optimize your business operations, or innovate in industrial applications, our cutting-edge IoT technology has you covered.</p>
 							<div class="hero-form field field-grouped is-revealing">
 	                            <div class="control">
-	                                <a class="button button-primary button-block" href="#">Get Started</a>
+	                                <a class="button button-primary button-block" href="/login">Get Started</a>
 	                            </div>
 	                        </div>
 						</div>

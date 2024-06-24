@@ -28,7 +28,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link  " href="../pages/tables.html">
+            <a class="nav-link  " href=" {{ route('pegawai.index') }} ">
                 <div class="fas fa-users fa-fw">
                 </div>
                 <span class="nav-link-text ms-1">Pegawai</span>
@@ -38,7 +38,7 @@
             <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
         </li>
         <li class="nav-item">
-            <a class="nav-link  " href="../public/pages/sign-in.html">
+            <a class="nav-link  " href=" {{ route('logout') }} ">
                 <div class="fas fa-sign-out-alt">
                     <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
