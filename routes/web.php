@@ -18,7 +18,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('pegawai', [PegawaiController::class, 'index'])->name('pegawai.index');
     Route::post('/pegawai/store', [PegawaiController::class, 'store'])->name('pegawai.store');
-    Route::put('/pegawai/update/{id}', [PegawaiController::class, 'update'])->name('pegawai.update');
+    Route::post('/pegawai/update/{id}', [PegawaiController::class, 'update'])->name('pegawai.update');
     Route::delete('/pegawai/destroy/{id}', [PegawaiController::class, 'destroy'])->name('pegawai.destroy');
 });
 

@@ -20,7 +20,6 @@ class PegawaiController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:pegawai,email',
-            'phone_number' => 'nullable|string|max:15',
             'password' => 'required|string|min:8',
             'alamat' => 'nullable|string',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -79,7 +78,7 @@ class PegawaiController extends Controller
 
         $user->name = $validated['name'];
         $user->email = $validated['email'];
-        $user->phone_number = $validated['phone_number'] ?? $user->phone_number;
+        // $user->phone_number = $validated['phone_number'] ?? $user->phone_number;
         $user->alamat = $validated['alamat'] ?? $user->alamat;
 
         if ($request->filled('password')) {

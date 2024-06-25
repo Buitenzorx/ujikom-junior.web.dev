@@ -203,24 +203,22 @@
         }
 
         function updatePegawai(id) {
-            const url = "{{ route('pegawai.update', ':id') }}".replace(':id', id);
+            const url = "{{ route('api.pegawai.update', ':id') }}".replace(':id', id);
             let formData = new FormData();
             formData.append('name', $('#editName' + id).val());
             formData.append('email', $('#editEmail' + id).val());
-            formData.append('password', $('#editPassword' + id).val()); // Ensure password is included if needed
             formData.append('phone_number', $('#editPhoneNumber' + id).val());
             formData.append('alamat', $('#editAlamat' + id).val());
             formData.append('avatar', $('#editAvatar' + id).prop('files')[0]);
 
             $.ajax({
                 url: url,
-                type: 'POST', // Keep this as POST because we are using the _method override
+                type: 'POST',
                 data: formData,
                 contentType: false,
                 processData: false,
                 headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-                    'X-HTTP-Method-Override': 'PUT' // Add this line to override the method to PUT
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 },
                 success: function(response) {
                     toastr.success(response.message, 'Sukses');
@@ -247,8 +245,6 @@
                 }
             });
         }
-
-
 
         $(document).ready(function() {
             new DataTable('#table-pegawai', {
