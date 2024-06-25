@@ -33,10 +33,10 @@
     <meta property="og:site_name" content="Creative Tim" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <link href="../public/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="../public/assets/css/nucleo-svg.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
-    <link id="pagestyle" href="../assets/css/soft-ui-dashboard.min.css?v=1.0.7" rel="stylesheet" />
+    <link href="../public/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link id="pagestyle" href="../public/assets/css/soft-ui-dashboard.min.css?v=1.0.7" rel="stylesheet" />
     <style>
         .async-hide {
             opacity: 0 !important
